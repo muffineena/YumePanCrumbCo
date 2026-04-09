@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - YumePan Crumb Co</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">YumePan Crumb Co</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="products-section">
+        <div class="container">
+            <div class="category-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bread">Bread</button>
+                <button class="filter-btn" data-filter="pastries">Pastries</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <div class="product-grid-full">
+                <!-- Bread Category -->
+                <div class="product-card-full" data-category="bread">
+                    <img src="https://via.placeholder.com/300x300?text=Milk+Bread" alt="Milk Bread" class="product-image">
+                    <h3>Milk Bread</h3>
+                    <p>Soft, pillowy bread with a delicate crumb and subtle sweetness</p>
+                    <p class="price">$6.99</p>
+                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                </div>
+
+                <!-- Pastries Category -->
+                <div class="product-card-full" data-category="pastries">
+                    <img src="https://via.placeholder.com/300x300?text=Matcha+Cream+Bun" alt="Matcha Cream Bun" class="product-image">
+                    <h3>Matcha Cream Bun</h3>
+                    <p>Premium matcha-infused pastry with silky green tea cream filling</p>
+                    <p class="price">$5.99</p>
+                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                </div>
+
+                <div class="product-card-full" data-category="pastries">
+                    <img src="https://via.placeholder.com/300x300?text=Custard+Bun" alt="Custard Bun" class="product-image">
+                    <h3>Custard Bun</h3>
+                    <p>Delicate pastry with rich, creamy custard filling dusted with powdered sugar</p>
+                    <p class="price">$4.99</p>
+                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                </div>
+
+                <div class="product-card-full" data-category="pastries">
+                    <img src="https://via.placeholder.com/300x300?text=Red+Bean+Bun" alt="Red Bean Bun" class="product-image">
+                    <h3>Red Bean Bun</h3>
+                    <p>Traditional pastry filled with sweet red bean paste and topped with sesame</p>
+                    <p class="price">$4.49</p>
+                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                </div>
+
+                <!-- Desserts Category -->
+                <div class="product-card-full" data-category="desserts">
+                    <img src="https://via.placeholder.com/300x300?text=Japanese+Cheesecake" alt="Japanese Cheesecake" class="product-image">
+                    <h3>Japanese Cheesecake</h3>
+                    <p>Light, fluffy cheesecake with a delicate crumb and smooth, creamy center</p>
+                    <p class="price">$8.99</p>
+                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                </div>
+
+                <div class="product-card-full" data-category="desserts">
+                    <img src="https://via.placeholder.com/300x300?text=Strawberry+Shortcake" alt="Strawberry Shortcake" class="product-image">
+                    <h3>Strawberry Shortcake</h3>
+                    <p>Classic sponge cake layered with fresh strawberries and whipped cream</p>
+                    <p class="price">$9.99</p>
+                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                </div>
+
+                <!-- Drinks Category -->
+                <div class="product-card-full" data-category="drinks">
+                    <img src="https://via.placeholder.com/300x300?text=Matcha+Latte" alt="Matcha Latte" class="product-image">
+                    <h3>Matcha Latte</h3>
+                    <p>Smooth matcha green tea blended with warm milk and light foam</p>
+                    <p class="price">$6.49</p>
+                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                </div>
+
+                <div class="product-card-full" data-category="drinks">
+                    <img src="https://via.placeholder.com/300x300?text=Strawberry+Milk" alt="Strawberry Milk" class="product-image">
+                    <h3>Strawberry Milk</h3>
+                    <p>Fresh strawberry blended with creamy premium milk</p>
+                    <p class="price">$5.99</p>
+                    <button class="btn btn-primary btn-small">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 YumePan Crumb Co. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
